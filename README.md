@@ -1,4 +1,4 @@
-# Lol Stats Website
+# Personal Game Stats
 <!-- PROJECT SHIELDS -->
 [![Latest release](https://img.shields.io/github/v/release/ollav12/LeageOfLegendsTracker
 )](https://github.com/ollav12/LeageOfLegendsTracker/releases)
@@ -42,7 +42,12 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+This project lets you run a local website that can query apis for the most common games given a api key for the specific games. Games that you can query given api keys and username are,
 
+Leage of Legends (Not workig),
+Valorant (Not working),
+Overwatch (Not working),
+Chess.com (Not working).
 
 
 
