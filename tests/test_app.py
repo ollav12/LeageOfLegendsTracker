@@ -5,7 +5,6 @@ from src.app import app
 
 client = TestClient(app)
 
-def test_read_root():
+def test_index_html():
     response = client.get("/")
     assert response.status_code == 200
-    assert "Hello, World!" in response.text

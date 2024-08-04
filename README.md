@@ -75,12 +75,12 @@ cd your-repository
 #### On Windows
 ```bash
 python -m venv venv
-.\venv\Scripts\activate
+.\venv\Scripts\activate # Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process, use this command in terminal if not allowed to execute
 ```
 #### On MacOS/Linux
 ```bash
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate 
 ```
 ### 3. Install Dependencies
 ```bash
@@ -93,12 +93,12 @@ Look at .env.example for what to include.
 
 ### 5. Run the Application
 ```bash
-uvicorn app.main:app --reload
+flask -A src:app run --reload
 ```
 
 ### 6. Access the Application
 ```bash
-http://127.0.0.1:8000
+http://127.0.0.1:5000
 ```
 You should now see the homepage of the application.
 
