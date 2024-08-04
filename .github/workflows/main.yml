@@ -15,13 +15,20 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
-      
+
+    - name: Cache pip
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
-      
+
     - name: Build Docker image
       run: docker build . -t flask-app
-      
+
     - name: Run tests
-      run: |
-        docker run flask-app pytest
+      run: docker run flask-app pytest
