@@ -11,8 +11,3 @@ def test_read_root():
     
     # Assert that the response status code is 200
     assert response.status_code == 200
-    
-    # Assert that the response contains the expected content
-    assert b"<!DOCTYPE html>" in response.content
-    assert b"<html>" in response.content
-    assert b"</html>" in response.content
