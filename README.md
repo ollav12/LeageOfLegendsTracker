@@ -102,20 +102,20 @@ http://127.0.0.1:8000
 ```
 You should now see the homepage of the application.
 
+
+
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [ ] Simple api queries to riot api
+- [ ] Create a database to store api queries
+- [ ] Frontend, backend and database works together
+- [ ] Simple frontend UI
+- [ ] Release a v1.0.0-beta version
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+See the [open issues](https://github.com/ollav12/PersonalGameStats/issues) for a full list of proposed features, tasks and known issues.
+
 
 
 <!-- PROJECT STRUCTURE -->
@@ -124,9 +124,9 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 ```bash 
 project_root/
 │
-├── app/
+├── src/
 │   ├── __init__.py
-│   ├── main.py
+│   ├── app.py
 │   ├── static/
 │   │   ├── css/
 │   │   │   └── style.css
@@ -135,8 +135,12 @@ project_root/
 │   │   └── images/
 │   └── templates/
 │       └── index.html
+├── tests/
+│   └── test_app.py
 │
 ├── .env     # Your .env file created for environment variables
+├── .gitattributes
+├── Dockerfile
 ├── .gitignore
 ├── requirements.txt
 └── venv/    # Virtual environment directory
