@@ -1,5 +1,6 @@
 <!-- PROJECT SHIELDS -->
-[![Latest release](https://github.com/ollav12/LeageOfLegendsTracker/workflows/CI/badge.svg?branch=main)](https://github.com/ollav12/LeageOfLegendsTracker/releases)
+[![Latest release](https://img.shields.io/github/v/release/ollav12/LeageOfLegendsTracker
+)](https://github.com/ollav12/LeageOfLegendsTracker/releases)
 [![Build Status](https://github.com/ollav12/LeageOfLegendsTracker/workflows/CI/badge.svg?branch=main)](https://github.com/ollav12/LeageOfLegendsTracker/actions)
 [![MIT License](https://img.shields.io/github/license/ollav12/LeageOfLegendsTracker)](license-url)
 
