@@ -1,3 +1,4 @@
+# Lol Stats Website
 <!-- PROJECT SHIELDS -->
 [![Latest release](https://img.shields.io/github/v/release/ollav12/LeageOfLegendsTracker
 )](https://github.com/ollav12/LeageOfLegendsTracker/releases)
@@ -44,7 +45,6 @@
 
 
 
-# LeageOfLegendsTracker FastAPI project
 
 ## Overview
 
