@@ -1,4 +1,6 @@
 <!-- PROJECT SHIELDS -->
+[![Latest release](https://github.com/ollav12/LeageOfLegendsTracker/workflows/CI/badge.svg?branch=main)](https://github.com/ollav12/LeageOfLegendsTracker/releases)
+[![Build Status](https://github.com/ollav12/LeageOfLegendsTracker/workflows/CI/badge.svg?branch=main)](https://github.com/ollav12/LeageOfLegendsTracker/actions)
 [![MIT License][license-shield]][license-url]
 
 
