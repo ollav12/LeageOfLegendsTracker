@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#__next {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+}
+
+.front-page {
+    display: block;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.search-bar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-div {
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 4px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.region-form {
+    display: flex;
+    align-items: center;
+}
+
+.label {
+    font-weight: bold;
+    color: black;
+    margin-right: 10px;
+}
+
+.select-container {
+    position: relative;
+    margin-right: 20px;
+}
+
+#EUW {
+    padding: 5px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    appearance: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-wrapper {
+    position: relative;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+#searchHome {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 25px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #495057;
+}
+
+.custom-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.gg-button {
+    background-color: #2f80ed;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gg-button:hover {
+    background-color: #1b5bbf;
+}
+
+.option-button {
+    display: none;
+    /* Hide this for now since the dropdown is used */
+}
+
+.select-container::after {
+    content: "▼";
+    font-size: 12px;
+    color: #495057;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.region-label {
+    margin-right: 3px;
+    /* Example to adjust margin */
+    position: relative;
+    /* If you want to position it more precisely */
+    top: 1px;
+    /* Example to adjust vertical position */
+    left: 10px;
+    /* Example to adjust horizontal position */
+}

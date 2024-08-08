@@ -3,11 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="static/css/style.css">
+    <title>Summoner Search</title>
+    <link rel="stylesheet" href="static/css/styles.css"> <!-- External CSS file -->
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <script src="static/js/script.js"></script>
+    <div class="front-page">
+        <div id="__next">
+            <div class="form-div">
+                <div class="search-bar">
+                    <div>
+                        <form id="summonerForm" class="region-form">
+                            <div>
+                                <small class="label region-label">Region</small>
+                                <div class="select-container">
+                                    <label class="hidden" for="regionSelect">Region</label>
+                                    <select id="regionSelect">
+                                        <option value="euw">EUW</option>
+                                        <option value="na">NA</option>
+                                    </select>
+                                </div>
+                                <div class="option-div">
+                                    <div>
+                                        <button type="button" class="option-button">
+                                            <span>Europe West</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-wrapper">
+                                <label for="searchHome" class="label">Search</label>
+                                <input id="searchHome" name="search" autocomplete="off" type="text" value="">
+                                <label for="searchHome" class="custom-placeholder">
+                                    <span class="custom-placeholder_name HOME">"Game Name" " + "</span>
+                                    <span class="custom-placeholder_tagline HOME">"#" "EUW"</span>
+                                </label>
+                                <div class="bottom-whitespace"></div>
+                            </div>
+                            <button class="gg-button" type="submit">.GG</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript to handle form submission -->
+    <script>
+        document.getElementById('summonerForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get values from the form fields
+            const region = document.getElementById('regionSelect').value;
+            const usernameTag = document.getElementById('searchHome').value;
+
+            // Split the username and tag by '#'
+            const [username, tag] = usernameTag.split('#');
+
+            // Clean up the username and assign the default tag if missing
+            const cleanUsername = username ? username.trim() : '';
+            const cleanTag = tag ? tag.trim() : region; // Default tag if none provided
+
+            // Construct the URL for redirection
+            const url = `/summoners/${region}/${cleanUsername}-${cleanTag}`;
+
+            // Redirect to the constructed URL
+            window.location.href = url;
+        });
+    </script>
 </body>
 </html>
